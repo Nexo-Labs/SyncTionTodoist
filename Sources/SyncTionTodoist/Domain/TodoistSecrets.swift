@@ -29,4 +29,8 @@ public struct TodoistSecrets: LoadedFromEnvironmentVariable, Codable, Equatable 
     public var isReady: Bool {
         secret.isEmpty == false
     }
+    
+    public var isValid: Bool {
+        secret.isEmpty == false
+    }
 }

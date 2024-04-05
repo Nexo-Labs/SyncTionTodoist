@@ -20,7 +20,7 @@ let package = Package(
             targets: ["SyncTionTodoist"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Fiser12/PreludePackage", from: "0.0.2"),
+        .package(url: "https://github.com/Fiser12/PreludePackage", from: "0.0.3"),
         .package(url: "https://github.com/Fiser12/SyncTionCore", from: "0.1.0")
         // .package(url: /* package url */, from: "1.0.0"),
     ],

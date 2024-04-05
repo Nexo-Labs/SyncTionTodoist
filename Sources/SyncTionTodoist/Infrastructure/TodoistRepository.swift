@@ -32,10 +32,10 @@ fileprivate extension URL {
     static let todoistTasks: URL = .todoistAPI.appendingPathComponent("rest/v2/tasks")
 }
 
-final class TodoistRepository: FormRepository {
-    static let shared = TodoistRepository()
+public final class TodoistRepository: FormRepository {
+    public static let shared = TodoistRepository()
 
-    @KeychainWrapper(Constants.todoistSecretLabel) var todoistSecrets: TodoistSecrets?
+    @KeychainWrapper(Constants.todoistSecretLabel) public var todoistSecrets: TodoistSecrets?
     
     var sectionsCache: [TodoistSectionDTO]? = nil
             
@@ -50,7 +50,7 @@ final class TodoistRepository: FormRepository {
         )
     }
     
-    static var scratchTemplate: FormTemplate {
+    public static var scratchTemplate: FormTemplate {
         let style = FormModel.Style(
             formName: TodoistFormService.shared.description,
             icon: .static(TodoistFormService.shared.icon),

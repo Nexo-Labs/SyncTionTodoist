@@ -35,7 +35,7 @@ fileprivate extension URL {
 public final class TodoistRepository: FormRepository {
     public static let shared = TodoistRepository()
 
-    @KeychainWrapper(Constants.todoistSecretLabel) public var todoistSecrets: TodoistSecrets?
+    @KeychainWrapper("TODOIST_PRIVATE_SECRET") public var todoistSecrets: TodoistSecrets?
     
     var sectionsCache: [TodoistSectionDTO]? = nil
             

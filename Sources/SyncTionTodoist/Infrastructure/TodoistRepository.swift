@@ -53,7 +53,7 @@ public final class TodoistRepository: FormRepository {
     public static var scratchTemplate: FormTemplate {
         let style = FormModel.Style(
             formName: TodoistFormService.shared.description,
-            icon: .static(TodoistFormService.shared.icon),
+            icon: .static(TodoistFormService.shared.icon, loadAsPng: false),
             color: "E44431",
             theme: .PlainGrey
         )
